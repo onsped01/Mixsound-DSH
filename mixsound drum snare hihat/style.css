@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: rgb(156, 156, 237);
+}
+
+.snare-pad {
+  background: rgb(235, 225, 94);
+}
+
+.hihat-pad {
+  background: rgb(141, 78, 78);
+}
+
+.kick-pad.active {
+  background: rgb(67, 67, 228);
+}
+
+.snare-pad.active {
+  background: rgb(208, 197, 49);
+}
+
+.hihat-pad.active {
+  background: rgb(141, 55, 55);
+}
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.kick-track,
+.snare-track,
+.hihat-track {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.kick,
+.snare,
+.hihat {
+  display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 0.75rem;
+  cursor: pointer;
+  border: none;
+  background: rgb(108, 119, 117);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.tive {
+  color: black;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: rgb(135, 146, 157);
+  cursor: pointer;
+  color: white;
+  border: none;
+  margin-top: 3rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
